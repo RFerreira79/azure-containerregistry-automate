@@ -52,7 +52,7 @@ jobs:
       - name: Construir a imagem local do docker
         run: |
           echo docker build
-          docker build -t ${{ secrets.ACR_REPO }}/ricardo:$VERSAO .
+          docker build -t "${{ secrets.ACR_REPO }}\ricardo:$VERSAO" .
 
       # Runs a set of commands using the runners shell
       - name: Login no azure container registry
