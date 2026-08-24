@@ -54,6 +54,7 @@ jobs:
           echo docker build
           # docker build -t "${{ secrets.ACR_REPO }}/ricardo:$VERSAO" .
           docker build -t sergio24082026cr.azurecr.io/ricardo:V1 .
+          docker images 
 
       # Runs a set of commands using the runners shell
       - name: Login no azure container registry
@@ -65,4 +66,5 @@ jobs:
       - name: Push no REPO do Azure Container Registry
         run: |
           echo Doker push
-          docker push ${{ secrets.ACR_REPO }}/ricardo:$VERSAO
+          # docker push ${{ secrets.ACR_REPO }}/ricardo:$VERSAO
+          docker push sergio24082026cr.azurecr.io/ricardo:V1
