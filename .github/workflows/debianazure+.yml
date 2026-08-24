@@ -46,4 +46,4 @@ jobs:
                 echo "Ficheiro Dockerfile não encontrado."
                 exit 1
             fi
-        echo "Versao=" $VERSAO
+          echo "Versao=" $VERSAO
