@@ -34,14 +34,14 @@ jobs:
                 # Importa para o ambiente atual
                 source config.env
             else
-                echo "Ficheiro config.env não encontrado."
+          echo "Ficheiro config.env não encontrado."
                 exit 1
             fi
-              echo testar ficheiro Dockerfile
+          echo testar ficheiro Dockerfile
             # Carrega variáveis do ficheiro Dockerfile
             if [ -f "Dockerfile" ]; then
 
-                echo "ficheiro Dockerfile existe"
+            echo "ficheiro Dockerfile existe"
             else
                 echo "Ficheiro Dockerfile não encontrado."
                 exit 1
